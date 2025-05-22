@@ -26,7 +26,11 @@ import bcrypt from 'bcrypt';
 
 import axios from 'axios';
 
-const SECRET_KEY = '6LdEx80qAAAAAOIzPlgv2ZsyjSfEOEDMy8X3fDJX';
+// import dotenv from 'dotenv';
+
+dotenv.config();
+
+const SECRET_KEY = 'process.env.RECAPTCHA_SECRET_KEY';
 
 
 //import { cookies } from 'js-cookie';
